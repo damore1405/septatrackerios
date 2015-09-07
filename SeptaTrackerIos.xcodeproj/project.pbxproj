@@ -15,6 +15,8 @@
 		C9F440461B9CA99C007AADE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F440451B9CA99C007AADE1 /* Images.xcassets */; };
 		C9F440491B9CA99C007AADE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F440471B9CA99C007AADE1 /* LaunchScreen.xib */; };
 		C9F440551B9CA99C007AADE1 /* SeptaTrackerIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F440541B9CA99C007AADE1 /* SeptaTrackerIosTests.m */; };
+		C9F4405F1B9CB9D5007AADE1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F4405E1B9CB9D5007AADE1 /* MapKit.framework */; };
+		C9F440611B9CBC36007AADE1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F440601B9CBC36007AADE1 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		C9F4404E1B9CA99C007AADE1 /* SeptaTrackerIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeptaTrackerIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F440531B9CA99C007AADE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9F440541B9CA99C007AADE1 /* SeptaTrackerIosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeptaTrackerIosTests.m; sourceTree = "<group>"; };
+		C9F4405E1B9CB9D5007AADE1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C9F440601B9CBC36007AADE1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F440611B9CBC36007AADE1 /* CoreLocation.framework in Frameworks */,
+				C9F4405F1B9CB9D5007AADE1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,8 @@
 		C9F440291B9CA99C007AADE1 = {
 			isa = PBXGroup;
 			children = (
+				C9F440601B9CBC36007AADE1 /* CoreLocation.framework */,
+				C9F4405E1B9CB9D5007AADE1 /* MapKit.framework */,
 				C9F440341B9CA99C007AADE1 /* SeptaTrackerIos */,
 				C9F440511B9CA99C007AADE1 /* SeptaTrackerIosTests */,
 				C9F440331B9CA99C007AADE1 /* Products */,
