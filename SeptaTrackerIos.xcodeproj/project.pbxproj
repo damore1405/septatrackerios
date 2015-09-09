@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C918DD851B9DE82C009E812E /* stations.csv in Resources */ = {isa = PBXBuildFile; fileRef = C918DD841B9DE82C009E812E /* stations.csv */; };
+		C9AB5C9C1B9DF2A500D9A428 /* PickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB5C9B1B9DF2A500D9A428 /* PickerDelegate.m */; };
+		C9AB5C9F1B9E4DB200D9A428 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB5C9E1B9E4DB200D9A428 /* TableViewController.m */; };
 		C9F440381B9CA99C007AADE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F440371B9CA99C007AADE1 /* main.m */; };
 		C9F4403B1B9CA99C007AADE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4403A1B9CA99C007AADE1 /* AppDelegate.m */; };
-		C9F4403E1B9CA99C007AADE1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4403D1B9CA99C007AADE1 /* FirstViewController.m */; };
-		C9F440411B9CA99C007AADE1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F440401B9CA99C007AADE1 /* SecondViewController.m */; };
+		C9F4403E1B9CA99C007AADE1 /* TrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4403D1B9CA99C007AADE1 /* TrainViewController.m */; };
+		C9F440411B9CA99C007AADE1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F440401B9CA99C007AADE1 /* MapViewController.m */; };
 		C9F440441B9CA99C007AADE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F440421B9CA99C007AADE1 /* Main.storyboard */; };
 		C9F440461B9CA99C007AADE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F440451B9CA99C007AADE1 /* Images.xcassets */; };
 		C9F440491B9CA99C007AADE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F440471B9CA99C007AADE1 /* LaunchScreen.xib */; };
@@ -30,15 +33,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C918DD841B9DE82C009E812E /* stations.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stations.csv; path = SeptaTrackerIosTests/stations.csv; sourceTree = SOURCE_ROOT; };
+		C9AB5C9A1B9DF2A500D9A428 /* PickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerDelegate.h; sourceTree = "<group>"; };
+		C9AB5C9B1B9DF2A500D9A428 /* PickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerDelegate.m; sourceTree = "<group>"; };
+		C9AB5C9D1B9E4DB200D9A428 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C9AB5C9E1B9E4DB200D9A428 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		C9F440321B9CA99C007AADE1 /* SeptaTrackerIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeptaTrackerIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F440361B9CA99C007AADE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9F440371B9CA99C007AADE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9F440391B9CA99C007AADE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9F4403A1B9CA99C007AADE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C9F4403C1B9CA99C007AADE1 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		C9F4403D1B9CA99C007AADE1 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		C9F4403F1B9CA99C007AADE1 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		C9F440401B9CA99C007AADE1 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C9F4403C1B9CA99C007AADE1 /* TrainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainViewController.h; sourceTree = "<group>"; };
+		C9F4403D1B9CA99C007AADE1 /* TrainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainViewController.m; sourceTree = "<group>"; };
+		C9F4403F1B9CA99C007AADE1 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C9F440401B9CA99C007AADE1 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		C9F440431B9CA99C007AADE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9F440451B9CA99C007AADE1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9F440481B9CA99C007AADE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -69,6 +77,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9AB5CA01B9E5DF500D9A428 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C9AB5CA31B9E5E3900D9A428 /* Headers */,
+				C9F4403A1B9CA99C007AADE1 /* AppDelegate.m */,
+				C9AB5C9B1B9DF2A500D9A428 /* PickerDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		C9AB5CA11B9E5E1A00D9A428 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9AB5CA21B9E5E2900D9A428 /* Headers */,
+				C9F4403D1B9CA99C007AADE1 /* TrainViewController.m */,
+				C9AB5C9E1B9E4DB200D9A428 /* TableViewController.m */,
+				C9F440401B9CA99C007AADE1 /* MapViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C9AB5CA21B9E5E2900D9A428 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C9F4403C1B9CA99C007AADE1 /* TrainViewController.h */,
+				C9AB5C9D1B9E4DB200D9A428 /* TableViewController.h */,
+				C9F4403F1B9CA99C007AADE1 /* MapViewController.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		C9AB5CA31B9E5E3900D9A428 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C9F440391B9CA99C007AADE1 /* AppDelegate.h */,
+				C9AB5C9A1B9DF2A500D9A428 /* PickerDelegate.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
 		C9F440291B9CA99C007AADE1 = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +140,8 @@
 		C9F440341B9CA99C007AADE1 /* SeptaTrackerIos */ = {
 			isa = PBXGroup;
 			children = (
-				C9F440391B9CA99C007AADE1 /* AppDelegate.h */,
-				C9F4403A1B9CA99C007AADE1 /* AppDelegate.m */,
-				C9F4403C1B9CA99C007AADE1 /* FirstViewController.h */,
-				C9F4403D1B9CA99C007AADE1 /* FirstViewController.m */,
-				C9F4403F1B9CA99C007AADE1 /* SecondViewController.h */,
-				C9F440401B9CA99C007AADE1 /* SecondViewController.m */,
+				C9AB5CA01B9E5DF500D9A428 /* Delegates */,
+				C9AB5CA11B9E5E1A00D9A428 /* Controllers */,
 				C9F440421B9CA99C007AADE1 /* Main.storyboard */,
 				C9F440451B9CA99C007AADE1 /* Images.xcassets */,
 				C9F440471B9CA99C007AADE1 /* LaunchScreen.xib */,
@@ -109,6 +153,7 @@
 		C9F440351B9CA99C007AADE1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C918DD841B9DE82C009E812E /* stations.csv */,
 				C9F440361B9CA99C007AADE1 /* Info.plist */,
 				C9F440371B9CA99C007AADE1 /* main.m */,
 			);
@@ -215,6 +260,7 @@
 				C9F440441B9CA99C007AADE1 /* Main.storyboard in Resources */,
 				C9F440491B9CA99C007AADE1 /* LaunchScreen.xib in Resources */,
 				C9F440461B9CA99C007AADE1 /* Images.xcassets in Resources */,
+				C918DD851B9DE82C009E812E /* stations.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F440411B9CA99C007AADE1 /* SecondViewController.m in Sources */,
+				C9F440411B9CA99C007AADE1 /* MapViewController.m in Sources */,
+				C9AB5C9F1B9E4DB200D9A428 /* TableViewController.m in Sources */,
+				C9AB5C9C1B9DF2A500D9A428 /* PickerDelegate.m in Sources */,
 				C9F4403B1B9CA99C007AADE1 /* AppDelegate.m in Sources */,
-				C9F4403E1B9CA99C007AADE1 /* FirstViewController.m in Sources */,
+				C9F4403E1B9CA99C007AADE1 /* TrainViewController.m in Sources */,
 				C9F440381B9CA99C007AADE1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +478,7 @@
 				C9F4405A1B9CA99C007AADE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9F4405B1B9CA99C007AADE1 /* Build configuration list for PBXNativeTarget "SeptaTrackerIosTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +487,7 @@
 				C9F4405D1B9CA99C007AADE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

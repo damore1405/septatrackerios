@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 derp. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "MapViewController.h"
 
 @interface SecondViewController ()
 
@@ -14,20 +14,19 @@
 
 @implementation SecondViewController
 
-
-
 - (void) setUpMap {
+    // The location of university city philadelphia to center the map around, with a region of abot 40,000 meters
     CLLocationCoordinate2D test = CLLocationCoordinate2DMake(39.954263, -75.189080);
     MKCoordinateRegion  i = MKCoordinateRegionMakeWithDistance(test, 40000, 40000);
     [_mMap setRegion:i];
-    
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpMap];
     
-    // TODO:
+    // TODO: Comment this shit better
     NSURL * septaAPI = [[NSURL alloc] initWithString:@"http://www3.septa.org/hackathon/TrainView/"];
     NSURLRequest * request = [[NSURLRequest alloc] initWithURL:septaAPI];
     
@@ -68,6 +67,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+//    [_mMap removeFromSuperview];
+//    _mMap = nil;
 }
 
 @end
