@@ -11,7 +11,7 @@
 
 @interface SecondViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet MKMapView *mMap;
+@property (strong, nonatomic) IBOutlet MKMapView *map;
 
 @end
 

@@ -15,11 +15,15 @@
 @implementation SecondViewController
 
 - (void) setUpMap {
+    
+//    _mMap = [[MKMapView alloc] initWithFrame:self.view.frame];
+//    [self.view addSubview:_mMap];
     // The location of university city philadelphia to center the map around, with a region of abot 40,000 meters
     CLLocationCoordinate2D test = CLLocationCoordinate2DMake(39.954263, -75.189080);
     MKCoordinateRegion  i = MKCoordinateRegionMakeWithDistance(test, 40000, 40000);
-    [_mMap setRegion:i];
+    [_map setRegion:i];
 }
+
 
 
 - (void)viewDidLoad {
@@ -43,8 +47,8 @@
                  
                  MKPointAnnotation * trainLocationAnnotation = [[MKPointAnnotation alloc] init];
                  
-                 CLLocationDegrees lat = [[i objectForKey:@"lat"] doubleValue];
-                 CLLocationDegrees lon = [[i objectForKey:@"lon"] doubleValue];
+                 CLLocationDegrees  lat = [[i objectForKey:@"lat"] doubleValue];
+                 CLLocationDegrees  lon = [[i objectForKey:@"lon"] doubleValue];
                  NSString      *number = [i objectForKey:@"trainno"];
                  
                  CLLocationCoordinate2D trainLatLon = CLLocationCoordinate2DMake(lat, lon);
@@ -52,7 +56,7 @@
                  trainLocationAnnotation.coordinate = trainLatLon;
                  trainLocationAnnotation.title = number;
                  
-                 [_mMap addAnnotation:trainLocationAnnotation];
+                 [_map addAnnotation:trainLocationAnnotation];
                  
              }
              
@@ -70,8 +74,10 @@
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
-//    [_mMap removeFromSuperview];
-//    _mMap = nil;
+//    self.map.showsUserLocation = NO;
+//    self.map.delegate = nil;
+//    [self.map removeFromSuperview];
+//    self.map = nil;
 }
 
 @end
