@@ -41,9 +41,18 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"regularCell"];
     if (!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"regularCell"];
-    
     [cell setSelectionStyle: UITableViewCellSelectionStyleNone];
-    cell.textLabel.text = [_trains[indexPath.row] objectForKey:@"orig_departure_time"];
+    
+    UILabel * line = [[cell.contentView subviews] objectAtIndex:0];
+    UILabel * departure = [[cell.contentView subviews] objectAtIndex:1];
+    UILabel * expectedArrival = [[cell.contentView subviews] objectAtIndex:2];
+    
+    [line setText: [ NSString stringWithFormat:@"Line: %@",[_trains[indexPath.row] objectForKey:@"orig_line"]]];
+    [departure setText: [ NSString stringWithFormat:@"Departure: %@", [_trains[indexPath.row] objectForKey:@"orig_departure_time"]]];
+    [expectedArrival setText: [NSString stringWithFormat:@"Arrival: %@",[_trains[indexPath.row] objectForKey:@"orig_arrival_time"]]];
+    
+//    cell.textLabel.text = [_trains[indexPath.row] objectForKey:@"orig_departure_time"];
+    
     return cell;
 }
 

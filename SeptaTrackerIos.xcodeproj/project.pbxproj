@@ -14,7 +14,7 @@
 		C9F4403B1B9CA99C007AADE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4403A1B9CA99C007AADE1 /* AppDelegate.m */; };
 		C9F4403E1B9CA99C007AADE1 /* TrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4403D1B9CA99C007AADE1 /* TrainViewController.m */; };
 		C9F440411B9CA99C007AADE1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F440401B9CA99C007AADE1 /* MapViewController.m */; };
-		C9F440441B9CA99C007AADE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F440421B9CA99C007AADE1 /* Main.storyboard */; };
+		C9F440441B9CA99C007AADE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F440421B9CA99C007AADE1 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C9F440461B9CA99C007AADE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F440451B9CA99C007AADE1 /* Images.xcassets */; };
 		C9F440491B9CA99C007AADE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F440471B9CA99C007AADE1 /* LaunchScreen.xib */; };
 		C9F440551B9CA99C007AADE1 /* SeptaTrackerIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F440541B9CA99C007AADE1 /* SeptaTrackerIosTests.m */; };
@@ -221,6 +221,9 @@
 		C9F4402A1B9CA99C007AADE1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					LineTag,
+				);
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = derp;
 				TargetAttributes = {
